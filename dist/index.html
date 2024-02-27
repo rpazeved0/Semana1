@@ -15,26 +15,26 @@
         </div>
     </header>
     <main class="container-padding flex">
-        <nav class="menu">
+        <!--nav class="menu">
             <a href="#" class="active">Início</a>
             <a href="#">Transferências</a>
             <a href="#">Investimentos</a>
             <a href="#">Outros serviços</a>
-        </nav>
+        </nav-->
         <div class="coluna-central">
             <section class="block-nova-transacao">
                 <h2>Cadastro Autor</h2>
                 <form action="" method="post" novalidate>
                     <div class="campo">
-                        <label for="nome">Nome:</label><br>
-                        <input type="text" name="nome" id="nome" class="campo-input" placeholder="" required />
+                        <label for="nome">Nome*:</label><br>
+                        <input type="text" name="nome" id="nome" class="campo-input" placeholder="" required maxlength="150"/>
                     </div>
                     <div class="campo">
-                        <label for="email">E-mail:</label><br>
+                        <label for="email">E-mail*:</label><br>
                         <input type="text" name="email" id="email" class="campo-input" required />
                     </div>
                     <div class="campo">
-                        <label for="biografia">Biografia:</label><br>
+                        <label for="biografia">Biografia*:</label><br>
                         <input type="text" name="biografia" id="biografia" class="campo-input"  required />
                     </div>
                     <div class="campo">
@@ -47,7 +47,7 @@
         </div>
 
         <aside class="extrato">
-            <h3>Extrato</h3>
+            <h3>Autores</h3>
             <div class="registro-transacoes">
                 <div class="transacoes-group">
                     <strong class="mes-group">Setembro</strong>
@@ -87,7 +87,6 @@
             </div>
         </aside>
     </main>
-    <script src="js/FormatoData.js"></script>
-    <script src="js/formatters.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
